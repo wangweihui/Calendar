@@ -1,0 +1,237 @@
+*
+{
+    margin: 0;
+    float: none;
+    padding: 0;
+    font-family: Helvetica,sans-serif;
+}
+.eventSingle
+{
+      margin: 5px;
+      border-radius: 5px;
+      position: relative;
+      box-shadow: 0 1px 2px rgba(0, 0, 0,0.5);
+      background: -webkit-linear-gradient(to bottom,#F0F0F0,#C1C1C1);
+      background: linear-gradient(to bottom,#F0F0F0,#C1C1C1);
+      margin-bottom: 10px;
+}
+.eventContent
+{
+    padding: 5px;
+    border-bottom: solid #B4B4B4 1px;
+}
+.eventTime
+{
+    padding: 5px;
+}
+.deleteicon
+{
+    float: right;
+    font-size: 1.2em;
+    color: #DC143C;
+}
+#eventCount
+{
+    text-align: center;
+}
+.newevnets
+{
+      margin: 0 5px 5px 5px;
+      padding: 8px;
+      border-radius: 5px;
+      position: relative;
+      box-shadow: 0 -1px 3px rgba(0, 0, 0,0.4);
+}
+input
+{
+    color: #606060;
+    outline: none;
+    font-size: 1em;
+    border: none;
+    border-radius: 3px;
+}
+.shijianicon
+{
+    font-size: 1.2em;
+}
+#evevtTime
+{
+    background: #F7F7F7;
+    margin-left: 5px;
+}
+#eventTimeSpan
+{
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+#eventAllday
+{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    float: right;
+    border: solid #B4B4B4 1px;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-align-items: center;
+    -moz-box-align:center ;
+    -webkit-align-content: center;
+     align-content: center;
+     
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+#alldayLab
+{
+    float: right;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-align-items: center;
+    -moz-box-align:center;
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 40px;
+    font-size: 1.2em;
+}
+
+#eventAdd
+{
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    /*background: #FF667A;*/
+    background: #DC143C;
+    
+    box-shadow: inset 0 -10px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    vertical-align: middle;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    display: inline-block;
+    /*background: #8B4513;*/
+    color: #fff;
+    -webkit-appearance: none;
+}
+#eventName
+{
+    background: #F7F7F7;
+    width: 100%;
+    max-width: 100%;
+}
+body
+{
+    font-size: 1em;
+    background: #F7F7F7;
+    color: #606060;
+}
+#monthHeader
+{
+    padding: 10px 0 10px 0;
+    color: #DC143C;
+    text-align: left;
+    vertical-align: middle;
+}
+.pre
+{
+    float: left;
+    margin-left: 10px;
+    font-size: 1.6em;
+    text-shadow: 0 2px 2px rgba(255,255,255,0.1), 0 1px 1px rgba(0,0,0,0.2);
+}
+.next
+{
+    float: right;
+    margin-right: 10px;
+    font-size: 1.6em;
+    text-shadow: 0 2px 2px rgba(255,255,255,0.1), 0 1px 1px rgba(0,0,0,0.2);
+}
+#monthHeader h2
+{
+    display: inline;
+    margin-left: 10px;
+}
+
+#todoCount
+{
+    padding: 5px 0 5px 10px;
+    background: #F7F7F7;
+    margin-left: 1.6em;
+}
+.weekHeader
+{
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: box;
+    display: flex;
+    width: 100%;
+    padding: 8px 0 8px 0;
+    background: #B0B0B0;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+}
+.weekHeader span
+{
+    display: block;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+.dayContainer
+{
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: box;
+    display: flex;
+    width: 100%;
+    padding: 2px 0 2px 0;
+}
+.dayContainer span
+{
+    display: block;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    text-align: center;
+    line-height: 1.8em;
+}
+.daySpan.today
+{
+    background: #DC143C;
+    box-shadow: inset 0 5px 15px rgba(255,255,255,0.1), inset 0 -10px 10px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    background-position: center;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    font-weight: bold;
+}
+.daySpan.selected
+{
+    box-shadow: inset 0 5px 15px rgba(255,255,255,0.1), inset 0 -10px 10px rgba(0,0,0,0.2);
+    background-color: rgb(101, 194, 192);
+    border-radius: 50%;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    font-weight: bold;
+}
+.daySpan.haveEvent
+{
+    border-bottom: solid #8B4513;
+    border-bottom-width:  2px;
+}
