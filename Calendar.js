@@ -382,15 +382,16 @@ function Calendar() {
 				var strCNAME = daySpan.className;
 				//清空格子关于选中状态、today状态及事件状态的样式
 				if (strCNAME.indexOf('today') > -1) {
-					daySpan.className = strCNAME.replace('today', '');
+					strCNAME = strCNAME.replace('today', '');
 				}
 				if (strCNAME.indexOf('selected') > -1) {
-					daySpan.className = strCNAME.replace('selected', '');
+					strCNAME = strCNAME.replace('selected', '');
 				}
 				if (strCNAME.indexOf('haveEvent') > -1) {
-					daySpan.className = strCNAME.replace('haveEvent', '');
+					strCNAME = strCNAME.replace('haveEvent', '');
 				}
-
+				
+				daySpan.className = strCNAME;
 				if (haveEvent(currentYear, currentMonth, dayIndex)) {
 					daySpan.className = daySpan.className + ' haveEvent';
 				}
